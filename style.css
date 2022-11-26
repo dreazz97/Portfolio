@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+.social-media {
+    width: 45px;
+}
+
+.linkedin {
+    margin-right: 30px;
+}
+
+.linkedin:hover {
+    cursor: pointer;
+}
+
+.github {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.soc-media-col {
+    margin-top: 15px;
+}
+
+.n-style {
+    color: black;
+}
+
+.n-style:hover {
+    color: rgb(194, 184, 184);
+}
+
+
+#nav-title {
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+.c1 {
+    margin-top: 180px;
+}
+
+.c2 {
+    margin-top: 300px;
+}
+
+#about {
+    background-color: #F1F7EE;
+}
+
+.eu {
+    border-radius: 280px;
+}
+
+.eu2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 50px;
+    width: 95%;
+}
+
+.intro-title {
+    margin-top: 135px;
+    font-weight: 600;
+}
+
+.intro-description {
+    font-weight: 500;
+}
+
+.about-title {
+    font-weight: 600;
+    margin-top: 120px;
+    margin-bottom: 15px;
+}
+
+.about-tech {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.tech-ul {
+    list-style: none;
+}
+
+.link-hover:hover {
+    color: rgb(194, 184, 184);
+}
+
+#projects {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: white;
+}
+
+.title-weight-600 {
+    font-weight: 600;
+}
+
+.cg {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+#contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #F1F7EE;
+}
+
+.contact-title {
+    margin-bottom: 60px;
+}
+
+.submit-button {
+    margin-top: 25px;
+    background-color: transparent;
+    color: #3e6623;
+    border-width: 1px;
+    font-weight: 600;
+    width: 150px;
+    border-radius: 25px;
+}
+
+.submit-button:hover {
+    background-color: #d1e4c2;
+    color: black;
+}
+
+
+#footer {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background-color: #B0BEA9;
+}
+
+.footer-links {
+    list-style: none;
+    text-decoration: underline;
+    color: black;
+}
+
+.footer-links:hover {
+    color: white;
+}
+
+.scroll-down {
+    position: relative;
+    top: 20px;
+    display: block;
+    font-size: 20px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 13px;
+    height: 13px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    z-index: 9;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+    -webkit-animation: fade_move_down 4s ease-in-out infinite;
+    -moz-animation:    fade_move_down 4s ease-in-out infinite;
+    animation:         fade_move_down 4s ease-in-out infinite;
+  }
+  
+  
+  /*animated scroll arrow animation*/
+  @-webkit-keyframes fade_move_down {
+    0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @-moz-keyframes fade_move_down {
+    0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+  @keyframes fade_move_down {
+    0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  }
+
+
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #b0bea9 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #b0bea9;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+
+@media only screen and (max-width: 1196px) {
+
+    .eu2 {
+        margin-top: 210px;
+    }
+    .about-title {
+        font-size: 2.3em;
+    }
+    .about-content {
+        font-size: 0.9em;
+    }
+    .about-tech {
+        font-size: 2.3em;
+    }
+    .about-tech-content {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #home {
+        margin-bottom: 0;
+    }
+    .eu2 {
+        margin-top: 50px;
+        width: 50%;
+    }
+    .c1 {
+        margin-top: 90px;
+    }
+    .intro-title {
+        margin-top: 40px;
+    }
+    .about-title {
+        margin-top: 60px;
+    }
+    .cf {
+        margin-bottom: 30px;
+    }
+
+    #footer {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 710px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+
+    .eu2 {
+        width: 70%;
+    }
+
+    .about-title {
+        font-size: 1.8em;
+    }
+    .about-content {
+        font-size: 0.7em;
+    }
+    .about-tech {
+        font-size: 1.8em;
+    }
+    .about-tech-content {
+        font-size: 0.7em;
+    }
+    
+}
+
+@media only screen and (max-width: 415px) {
+    .eu {
+        width: 80%;
+    }
+
+    .intro-title {
+        margin-top: 50px;
+        font-size: 1.7em;
+    }
+    .intro-description {
+        font-size: 1.2em;
+    }
+
+    .intro-find-more-below {
+        font-size: 1em;
+        margin-bottom: 40px;
+    }
+
+    .social-media {
+        width: 35px;
+    }
+}
