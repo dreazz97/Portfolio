@@ -374,13 +374,10 @@ body.active {
         font-size: 1.8em;
     }
     .about-content {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
     .about-tech {
         font-size: 1.8em;
-    }
-    .about-tech-content {
-        font-size: 0.7em;
     }
     
 }
