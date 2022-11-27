@@ -30,6 +30,8 @@ body.active {
 
 .n-style {
     color: black;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 .n-style:hover {
@@ -315,6 +317,13 @@ body.active {
 }
 
 @media only screen and (max-width: 991px) {
+
+    .n-style {
+        color: black;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
     .tech-skills-pos {
         position: relative;
         left: 0px;
