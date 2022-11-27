@@ -86,8 +86,9 @@ body.active {
     font-weight: 600;
 }
 
-.tech-ul {
-    list-style: none;
+.tech-skills-pos {
+    position: relative;
+    left: 25px;
 }
 
 .link-hover:hover {
@@ -314,6 +315,11 @@ body.active {
 }
 
 @media only screen and (max-width: 991px) {
+    .tech-skills-pos {
+        position: relative;
+        left: 0px;
+    }
+
     #home {
         margin-bottom: 0;
     }
