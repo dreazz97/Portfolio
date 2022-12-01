@@ -400,8 +400,16 @@ body.active {
 
     .margin-titulo {
         margin-top: 50px;
+    }
+
+    .intro-title {
         font-size: 1.7em;
     }
+
+    #cursor {
+        font-size: 1.7em;
+    }
+
     .intro-description {
         font-size: 1.2em;
     }

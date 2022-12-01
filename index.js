@@ -86,7 +86,7 @@ gsap.to(".intro-title", {
         start: "100px 50%"
     },
     duration: 1,
-    x: -200,
+    x: -20,
     autoAlpha: 0,
     ease: "elastic.out(1, 1)"
   })
@@ -97,7 +97,7 @@ gsap.to(".intro-title", {
         start: "100px 30%"
     },
     duration: 1,
-    x: 200,
+    x: 20,
     autoAlpha: 0,
     ease: "elastic.out(1, 1)"
   })
@@ -108,7 +108,7 @@ gsap.to(".intro-title", {
         start: "200px 60%"
     },
     duration: 1,
-    x: -200,
+    x: -20,
     autoAlpha: 0,
     ease: "expo.out(1, 1)"
   })
@@ -119,7 +119,7 @@ gsap.to(".intro-title", {
         start: "200px 60%"
     },
     duration: 1,
-    x: 200,
+    x: 20,
     autoAlpha: 0,
     ease: "expo.out(1, 1)"
   })
@@ -130,7 +130,7 @@ gsap.to(".intro-title", {
         start: "200px 60%"
     },
     duration: 0.75,
-    y: -100,
+    y: -50,
     autoAlpha: 0,
     ease: Power2.out
   })
