@@ -82,8 +82,8 @@ gsap.to(".intro-title", {
 
   gsap.from(".about-info-col", {
     scrollTrigger: {
-        trigger: ".about-info-col",
-        start: "top center"
+        trigger: ".about-content",
+        start: "100px 50%"
     },
     duration: 1,
     x: -200,
@@ -94,7 +94,7 @@ gsap.to(".intro-title", {
   gsap.from(".about-img-col", {
     scrollTrigger: {
         trigger: ".about-info-col",
-        start: "top center"
+        start: "100px 30%"
     },
     duration: 1,
     x: 200,
@@ -105,7 +105,7 @@ gsap.to(".intro-title", {
   gsap.from(".card1", {
     scrollTrigger: {
         trigger: ".cg",
-        start: "top center"
+        start: "200px 60%"
     },
     duration: 1,
     x: -200,
@@ -116,7 +116,7 @@ gsap.to(".intro-title", {
   gsap.from(".card2", {
     scrollTrigger: {
         trigger: ".cg",
-        start: "top center"
+        start: "200px 60%"
     },
     duration: 1,
     x: 200,
@@ -127,7 +127,7 @@ gsap.to(".intro-title", {
   gsap.from(".projects_title", {
     scrollTrigger: {
         trigger: ".cg",
-        start: "top center"
+        start: "200px 60%"
     },
     duration: 0.75,
     y: -100,
