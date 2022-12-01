@@ -36,3 +36,101 @@ contactclick.addEventListener('click', () => {
     offScreenMenu.classList.toggle('active');
     body.classList.toggle('active');
 })
+
+
+//Gsap animations
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(TextPlugin);
+
+gsap.from(".nav-item", {
+    duration: 0.75,
+    x: 200,
+    autoAlpha: 0,
+    ease: "elastic.out(1, 1)",
+    stagger: {
+      each: 0.75,
+      amount: 0.5
+    }
+  })
+
+  gsap.from("#nav-title", {
+    duration: 1,
+    x: -200,
+    autoAlpha: 0,
+    ease: "elastic.out(1, 1)",
+  })
+
+
+let tl = gsap.timeline();
+
+tl.from(".c1", {
+  duration: 0.75,
+  y: -80,
+  autoAlpha: 0,
+  ease: Power2.out,
+  stagger: 1.5
+})
+
+gsap.fromTo('#cursor', { autoAlpha: 0, x: -20}, {autoAlpha: 1, duration: 0.5, repeat: -1, ease: SteppedEase.config(1)});
+
+gsap.to(".intro-title", {
+    text: {
+        value: "Hi, my name is Iuri"
+    },
+     duration: 3, delay: 1, ease: "none"
+})
+
+  gsap.from(".about-info-col", {
+    scrollTrigger: {
+        trigger: ".about-info-col",
+        start: "top center"
+    },
+    duration: 1,
+    x: -200,
+    autoAlpha: 0,
+    ease: "elastic.out(1, 1)"
+  })
+
+  gsap.from(".about-img-col", {
+    scrollTrigger: {
+        trigger: ".about-info-col",
+        start: "top center"
+    },
+    duration: 1,
+    x: 200,
+    autoAlpha: 0,
+    ease: "elastic.out(1, 1)"
+  })
+
+  gsap.from(".card1", {
+    scrollTrigger: {
+        trigger: ".cg",
+        start: "top center"
+    },
+    duration: 1,
+    x: -200,
+    autoAlpha: 0,
+    ease: "expo.out(1, 1)"
+  })
+
+  gsap.from(".card2", {
+    scrollTrigger: {
+        trigger: ".cg",
+        start: "top center"
+    },
+    duration: 1,
+    x: 200,
+    autoAlpha: 0,
+    ease: "expo.out(1, 1)"
+  })
+
+  gsap.from(".projects_title", {
+    scrollTrigger: {
+        trigger: ".cg",
+        start: "top center"
+    },
+    duration: 0.75,
+    y: -100,
+    autoAlpha: 0,
+    ease: Power2.out
+  })
