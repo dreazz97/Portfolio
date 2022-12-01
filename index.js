@@ -74,43 +74,24 @@ window.addEventListener("load", function() {
     gsap.from(".about-info-col", {
       scrollTrigger: {
           trigger: ".about-content",
-          start: "100px 50%"
+          start: "100px 20%"
       },
       duration: 1,
-      y: 120,
+      y: -120,
       autoAlpha: 0,
       ease: "elastic.out(1, 1)"
     })
     gsap.from(".about-img-col", {
       scrollTrigger: {
           trigger: ".about-info-col",
-          start: "100px 30%"
+          start: "100px 10%"
       },
       duration: 1,
       y: 120,
       autoAlpha: 0,
       ease: "elastic.out(1, 1)"
     })
-    gsap.from(".card1", {
-      scrollTrigger: {
-          trigger: ".cg",
-          start: "200px 60%"
-      },
-      duration: 1,
-      y: -120,
-      autoAlpha: 0,
-      ease: "expo.out(1, 1)"
-    })
-    gsap.from(".card2", {
-      scrollTrigger: {
-          trigger: ".cg",
-          start: "200px 60%"
-      },
-      duration: 1,
-      y: 120,
-      autoAlpha: 0,
-      ease: "expo.out(1, 1)"
-    })
+
   }
   else if (window.matchMedia("(min-width: 991px)").matches) {
     console.log("horizontal anim")
@@ -145,6 +126,29 @@ window.addEventListener("load", function() {
       autoAlpha: 0,
       ease: "elastic.out(1, 1)"
     })
+  }
+  if (window.matchMedia("(max-width: 575px)").matches) {
+    gsap.from(".card1", {
+      scrollTrigger: {
+          trigger: ".cg",
+          start: "100px 40%"
+      },
+      duration: 1,
+      y: -120,
+      autoAlpha: 0,
+      ease: "expo.out(1, 1)"
+    })
+    gsap.from(".card2", {
+      scrollTrigger: {
+          trigger: ".cg",
+          start: "100px 40%"
+      },
+      duration: 1,
+      y: 120,
+      autoAlpha: 0,
+      ease: "expo.out(1, 1)"
+    })
+  } else if (window.matchMedia("(min-width: 575px)").matches) {
     gsap.from(".card1", {
       scrollTrigger: {
           trigger: ".cg",
@@ -174,7 +178,7 @@ window.addEventListener("load", function() {
         start: "200px 60%"
     },
     duration: 0.75,
-    y: -50,
+    y: -100,
     autoAlpha: 0,
     ease: Power2.out
   })
