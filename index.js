@@ -95,16 +95,6 @@ window.addEventListener("load", function() {
   }
   else if (window.matchMedia("(min-width: 991px)").matches) {
     console.log("horizontal anim")
-    gsap.from(".nav-item", {
-      duration: 0.75,
-      x: 200,
-      autoAlpha: 0,
-      ease: "elastic.out(1, 1)",
-      stagger: {
-        each: 0.75,
-        amount: 0.5
-      }
-    })
     gsap.from(".about-info-col", {
       scrollTrigger: {
           trigger: ".about-content",
@@ -125,6 +115,19 @@ window.addEventListener("load", function() {
       x: 200,
       autoAlpha: 0,
       ease: "elastic.out(1, 1)"
+    })
+  }
+
+  if (window.matchMedia("(min-width: 711px)").matches) {
+    gsap.from(".nav-item", {
+      duration: 0.75,
+      x: 200,
+      autoAlpha: 0,
+      ease: "elastic.out(1, 1)",
+      stagger: {
+        each: 0.75,
+        amount: 0.5
+      }
     })
   }
   if (window.matchMedia("(max-width: 575px)").matches) {
@@ -175,7 +178,7 @@ window.addEventListener("load", function() {
   gsap.from(".projects_title", {
     scrollTrigger: {
         trigger: ".cg",
-        start: "200px 60%"
+        start: "100px 60%"
     },
     duration: 0.75,
     y: -100,
