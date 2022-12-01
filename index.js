@@ -37,21 +37,9 @@ contactclick.addEventListener('click', () => {
     body.classList.toggle('active');
 })
 
-
 //Gsap animations
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(TextPlugin);
-
-gsap.from(".nav-item", {
-    duration: 0.75,
-    x: 200,
-    autoAlpha: 0,
-    ease: "elastic.out(1, 1)",
-    stagger: {
-      each: 0.75,
-      amount: 0.5
-    }
-  })
 
   gsap.from("#nav-title", {
     duration: 1,
@@ -80,49 +68,105 @@ gsap.to(".intro-title", {
      duration: 3, delay: 1, ease: "none"
 })
 
-  gsap.from(".about-info-col", {
-    scrollTrigger: {
-        trigger: ".about-content",
-        start: "100px 50%"
-    },
-    duration: 1,
-    x: -20,
-    autoAlpha: 0,
-    ease: "elastic.out(1, 1)"
-  })
-
-  gsap.from(".about-img-col", {
-    scrollTrigger: {
-        trigger: ".about-info-col",
-        start: "100px 30%"
-    },
-    duration: 1,
-    x: 20,
-    autoAlpha: 0,
-    ease: "elastic.out(1, 1)"
-  })
-
-  gsap.from(".card1", {
-    scrollTrigger: {
-        trigger: ".cg",
-        start: "200px 60%"
-    },
-    duration: 1,
-    x: -20,
-    autoAlpha: 0,
-    ease: "expo.out(1, 1)"
-  })
-
-  gsap.from(".card2", {
-    scrollTrigger: {
-        trigger: ".cg",
-        start: "200px 60%"
-    },
-    duration: 1,
-    x: 20,
-    autoAlpha: 0,
-    ease: "expo.out(1, 1)"
-  })
+window.addEventListener("load", function() {
+  if (window.matchMedia("(max-width: 991px)").matches) {
+    console.log("vertical anim")
+    gsap.from(".about-info-col", {
+      scrollTrigger: {
+          trigger: ".about-content",
+          start: "100px 50%"
+      },
+      duration: 1,
+      y: 120,
+      autoAlpha: 0,
+      ease: "elastic.out(1, 1)"
+    })
+    gsap.from(".about-img-col", {
+      scrollTrigger: {
+          trigger: ".about-info-col",
+          start: "100px 30%"
+      },
+      duration: 1,
+      y: 120,
+      autoAlpha: 0,
+      ease: "elastic.out(1, 1)"
+    })
+    gsap.from(".card1", {
+      scrollTrigger: {
+          trigger: ".cg",
+          start: "200px 60%"
+      },
+      duration: 1,
+      y: -120,
+      autoAlpha: 0,
+      ease: "expo.out(1, 1)"
+    })
+    gsap.from(".card2", {
+      scrollTrigger: {
+          trigger: ".cg",
+          start: "200px 60%"
+      },
+      duration: 1,
+      y: 120,
+      autoAlpha: 0,
+      ease: "expo.out(1, 1)"
+    })
+  }
+  else if (window.matchMedia("(min-width: 991px)").matches) {
+    console.log("horizontal anim")
+    gsap.from(".nav-item", {
+      duration: 0.75,
+      x: 200,
+      autoAlpha: 0,
+      ease: "elastic.out(1, 1)",
+      stagger: {
+        each: 0.75,
+        amount: 0.5
+      }
+    })
+    gsap.from(".about-info-col", {
+      scrollTrigger: {
+          trigger: ".about-content",
+          start: "100px 50%"
+      },
+      duration: 1,
+      x: -200,
+      autoAlpha: 0,
+      ease: "elastic.out(1, 1)"
+    })
+  
+    gsap.from(".about-img-col", {
+      scrollTrigger: {
+          trigger: ".about-info-col",
+          start: "100px 30%"
+      },
+      duration: 1,
+      x: 200,
+      autoAlpha: 0,
+      ease: "elastic.out(1, 1)"
+    })
+    gsap.from(".card1", {
+      scrollTrigger: {
+          trigger: ".cg",
+          start: "200px 60%"
+      },
+      duration: 1,
+      x: -200,
+      autoAlpha: 0,
+      ease: "expo.out(1, 1)"
+    })
+    gsap.from(".card2", {
+      scrollTrigger: {
+          trigger: ".cg",
+          start: "200px 60%"
+      },
+      duration: 1,
+      x: 200,
+      autoAlpha: 0,
+      ease: "expo.out(1, 1)"
+    })
+  }
+})
 
   gsap.from(".projects_title", {
     scrollTrigger: {
